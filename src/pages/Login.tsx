@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { Meteors } from '../components/Meteors'
 import './Auth.css'
 
 export default function Login() {
@@ -28,6 +29,7 @@ export default function Login() {
 
   return (
     <div className="auth-container">
+      <Meteors number={30} />
       <div className="auth-card">
         <div className="auth-logo">
           <img src="/icons8-document.svg" alt="DocumentNest" width="48" height="48" />
